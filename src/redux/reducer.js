@@ -1,6 +1,8 @@
+import { ADD_TO_CART } from './constants'
+
 export const cartData = (data = [], action) => {
     console.warn('reducer is called action : ' , action);
-    if(action.type === 'ADD_TO_CART') {
+    if(action.type === ADD_TO_CART) {
         console.warn('action type matched ', action.data)
         return data
     } else {
