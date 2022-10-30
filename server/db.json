@@ -1,9 +1,40 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-  }
+    "products": [
+        {
+            "id": 1,
+            "name": "apple iphone 12",
+            "color": "gray" ,
+            "price": 450000,
+            "category": "mobile",
+            "brand": "apple",
+            "image": "https://i0.wp.com/appleasia.lk/wp-content/uploads/2021/07/iPhone-12-Blue-SriLanka-Apple-Asia-1.jpg?fit=1024%2C1024&ssl=1"
+        },
+        {
+            "id": 2,
+            "name": "nike shoe",
+            "color": "white" ,
+            "price": 6500,
+            "category": "mens ware",
+            "brand": "nike",
+            "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d77c8f9a-c6e8-40a5-8332-910312bc86a5/blazer-mid-77-big-kids-shoes-4VfSTd.png"
+        },
+        {
+            "id": 3,
+            "name": "samsung tv 32 inches",
+            "color": "black" ,
+            "price": 65000,
+            "category": "tv",
+            "brand": "samsung",
+            "image": "https://m.media-amazon.com/images/I/91UsHjAPTlL._AC_SL1500_.jpg"
+        },
+        {
+            "id": 4,
+            "name": "sonay camera",
+            "color": "black" ,
+            "price": 234000,
+            "category": "cameras",
+            "brand": "sony",
+            "image": "https://s3-ap-southeast-1.amazonaws.com/media.cameralk.com/4681/Sony-ZV-1-2.jpg"
+        }
+    ]
+}
