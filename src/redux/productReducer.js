@@ -1,4 +1,4 @@
-import { PRODUCT_LIST, SET_PRODUCT_LIST } from './constants'
+import { SET_PRODUCT_LIST } from './constants'
 
 export const productList = (data = [], action) => {
     console.warn('reducer is called action : ' , action);

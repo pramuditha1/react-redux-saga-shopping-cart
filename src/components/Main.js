@@ -1,9 +1,12 @@
 import { useDispatch } from 'react-redux'
 import { addToCart, removeFromCart, emptyCart } from '../redux/action'
 import { getProductList } from '../redux/productActions'
+import { useSelector } from 'react-redux';
 
 function Main() {
   const dispatch = useDispatch();
+  const productData = useSelector((state) => state.productList)
+  console.log("################################# ",productData)
   const product = {
     name: 'iPhone',
     category: 'mobile',
