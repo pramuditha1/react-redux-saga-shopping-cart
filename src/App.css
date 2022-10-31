@@ -61,3 +61,19 @@
       transform: rotate(360deg);
     }
   }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-container img {
+    width: 300px;
+    height: auto;
+  }
+
+  .product-container .product-item {
+    margin: 20px;
+    padding: 20px;
+    border: 1.5px solid #d2d9df;
+  }

@@ -9,6 +9,6 @@ export const productList = (data = [], action) => {
             return [...action.data]
         default:
             console.log('reducer called no action')
-        return []
+        return data
     }
 }
