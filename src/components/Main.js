@@ -7,11 +7,10 @@ import { useEffect } from 'react';
 function Main() {
   const dispatch = useDispatch();
   let productData = useSelector((state) => state.productList)
-  let productData1 = useSelector((state) => state)
-console.log("############################################ : ", productData1)
+
   useEffect(() => {
     dispatch(getProductList())
-  }, [])
+  }, [dispatch])
 
   return (
     <div className="App">
