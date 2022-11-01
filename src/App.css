@@ -78,10 +78,16 @@
     border: 1.5px solid #d2d9df;
   }
 
-
 .header-title {
   padding: 20px;
   margin: 5px;
   float: left;
   color: darkgreen;
+}
+
+.search-text {
+  padding: 10px;
+  margin: 15px;
+  width: 200px;
+  border-radius: 10px;
 }

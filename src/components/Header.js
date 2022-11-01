@@ -1,7 +1,10 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { filterProductList } from "../redux/productActions";
 
 const Header =()=>{
+    const dispatch = useDispatch()
     const cartData = useSelector((state)=> state.cartData)
     console.log('reading redux store value: ', cartData)
     return(
@@ -11,6 +14,8 @@ const Header =()=>{
                     Abans Shpooing cart
                 </h1>
             </Link>
+            <input type="text" className="search-text" placeholder="Search Products..."  
+            onChange={(e) => dispatch(filterProductList(e.target.value))}/>
             <Link to="/cart">
                 <div className="cart-div">
                     <span>{cartData.length}</span>
